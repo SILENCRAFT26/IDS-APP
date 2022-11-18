@@ -126,12 +126,25 @@
                                 <div class='dashboard-nav-dropdown-menu'>
                                     <a href="#objetivos3" class="dashboard-nav-dropdown-item nav-link js-scroll-trigger last-level">Objetivos</a>
                                     <a href="#alternativas3" class="dashboard-nav-dropdown-item nav-link js-scroll-trigger last-level">Alternativas</a>
-                                    <a href="#consecuencias_positivas" class="dashboard-nav-dropdown-item nav-link js-scroll-trigger last-level">Consecuencias positivas de los objetivos del sistema</a>
-                                    <a href="#consecuencias_negativas" class="dashboard-nav-dropdown-item nav-link js-scroll-trigger last-level">Consecuencias negativas de las alternativas del sistema</a>
+                                    <a href="#matriz_objetivos" class="dashboard-nav-dropdown-item nav-link js-scroll-trigger last-level">Matriz de alternativas vs objetivos</a>
+                                    <a href="#sistema_optimo" class="dashboard-nav-dropdown-item nav-link js-scroll-trigger last-level">Selección del sistema óptimo</a>
+                                    <a href="#segundo_sistema_optimo" class="dashboard-nav-dropdown-item nav-link js-scroll-trigger last-level">Segundo sistema óptimo</a>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <div class='dashboard-nav-dropdown nav-item'><a href="#anexos" class="dashboard-nav-item dashboard-nav-dropdown-toggle nav-link">Anexos</a>
+                        <div class='dashboard-nav-dropdown-menu'>
+                                <a href="#perttitle" class="dashboard-nav-dropdown-item nav-link js-scroll-trigger last-level">PERT - CPM DEL SISTEMA</a>
+                                <a href="#actividades" class="dashboard-nav-dropdown-item nav-link js-scroll-trigger last-level">ACTIVIDADES DEL PROYECTO</a>
+                                <a href="#grafo" class="dashboard-nav-dropdown-item nav-link js-scroll-trigger last-level">GRAFO DE RED DEL PROYECTO</a>
+                                <a href="#pert" class="dashboard-nav-dropdown-item nav-link js-scroll-trigger last-level">CPM - PERT</a>
+                                <a href="#gant" class="dashboard-nav-dropdown-item nav-link js-scroll-trigger last-level">DIAGRAMA DE GANTT</a>
+                                <a href="#memoria" class="dashboard-nav-dropdown-item nav-link js-scroll-trigger last-level">MEMORIA DE CALCULO</a>
+                                <a href="#calculo_porcentaje" class="dashboard-nav-dropdown-item nav-link js-scroll-trigger last-level">CÁLCULO DE PORCENTAJE DE LOS OBJETIVOS</a>
+                                <a href="#calculo_alternativas" class="dashboard-nav-dropdown-item nav-link js-scroll-trigger last-level">CÁLCULO DE COSTO ALTERNATIVAS</a>
+                        </div>
+                    </div>  
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#Conclusion">Conclusión</a></li>
                 </ul>
             </div>
@@ -785,12 +798,12 @@
                     <h5>O15.A1.N1.</h5>
                     <p>El taller deberá destinar una parte del presupuesto para efectos de mantenimiento de los equipos o maquinaria por la que opte.</p>
 
-                    <h5 class="m-4">Matriz de alternativas vs objetivos</h5>
+                    <h5 class="m-4" id="matriz_objetivos">Matriz de alternativas vs objetivos</h5>
                     <p>La matriz alternativas vs. Objetivos representa un análisis de optimización de alternativas en donde se evalúa cada alternativa con los objetivos del sistema, utilizando el “Esquema de Planificación Sistemático - PLASIS” La planificación sistemática se realiza para resolver problemas complejos. Permite al ingeniero de sistemas realizar un análisis ordenado del mismo y canaliza el flujo de creatividad desde la situación problémica. </p>
                     <p>Una vez que ya se tienen todos los datos necesarios se debe realizar la selección del mejor sistema. Esto se lleva a cabo a través de dicha matriz, en la cual se contraponen cada alternativa contra cada objetivo. </p>
                     <img class="img-fluid" src="./assets/img/MatrizObjetivos.png" alt="">
                 
-                    <h5 class="m-4">Selección del sistema óptimo</h5>
+                    <h5 class="m-4" id="sistema_optimo">Selección del sistema óptimo</h5>
                     <p>En base a la matriz planteada, para la selección del sistema óptimo se utilizó el criterio de número de objetivos que cumple cada alternativa y costo mínimo, quedando así el sistema óptimo:</p>
                     <h5>{O2.A2, O3.A1, O4.A1, O5.A1, O6.A1, O7.A1, O8.A1, O9.A1, O10.A1, O11.A1, O12.A2, O13.A1, O14.A1, O15.A1}</h5>
                     
@@ -826,7 +839,9 @@
                     <p>Implementar maquinaria eficiente que disminuya tiempos muertos en el proceso de empacado, con un costo de C$ 540.</p>
                     
                     <h4 class="m-4">COSTO TOTAL = C$220,534.30 </h4>
-                    <h4 class="m-4">Segundo sistema óptimo</h4>
+                    <h4 class="m-4" id="segundo_sistema_optimo">Segundo sistema óptimo</h4>
+                    <p>De no cumplirse o implementarse esta primera solución se plantea en segundo sistema óptimo o plan B, el cual queda conformado de la siguiente manera:</p>
+                    <h5>SO2 = {O2.A2, O3.A1, O4.A2, O5.A2, O6.A1, O7.A1, O8.A1, O9.A1, O10.A1, O11.A1, O12.A2, O13.A1, O14.A1, O15.A1}</h5>
                     <h4 class="m-4">Alternativas de solución del segundo sistema óptimo</h4>
                     
                     <h4 class="m-4">O2.A1.</h4>
@@ -860,26 +875,52 @@
                     <h4 class="m-4">COSTO TOTAL = C$264,605.40</h4>
                 </div>
             </section>
+            <!--Anexos-->
+            <section class="resume-section" id="Anexo">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Anexos</h2>
+                    
+                    <h4 class="m-3" id="perttitle">PERT - CPM del sistema</h4>
+                    <p>El método de la ruta crítica (CPM, por sus siglas en inglés) es una técnica que te permite identificar las tareas que se necesitan para realizar un proyecto. La ruta crítica en la gestión de proyectos es la secuencia más larga de actividades que se deben finalizar a tiempo para completar la totalidad del proyecto. Tiene como fin identificar las tareas más importantes del cronograma del proyecto, detectar las dependencias de las tareas y calcular la duración de las tareas.</p>
+                    <p>La técnica de revisión de evaluación de programas (PERT) es una herramienta de planificación de la gestión de proyectos que se utiliza para calcular la cantidad de tiempo que llevará terminar un proyecto de manera realista. Los diagramas PERT se utilizan para planificar tareas dentro de un proyecto, lo que facilita la programación y coordinación de los miembros del equipo.</p>
+
+                    <h4 class="m-3" id="actividades">Actividades del proyecto </h4>
+                    <p>A continuación, se detallan las actividades que representan los objetivos con la siguiente codificación: “O” procedido por el número de objetivo, asimismo, se plantea la duración de cada una de ellas en plazos de semanas, por último, las actividades que preceden a otra en particular.</p>
+                    <img src="./assets/img/actividades_proyecto.png" alt="">
+                    <h4 class="m-3" id="grafo">Grafo de red del proyecto</h4>
+                    <p>Este diagrama tiene por objetivo representar gráficamente las dependencias de las tareas y el orden en que deberán ser realizadas. </p>
+                    <img src="./assets/img/grafo.png" alt="">
+
+                    <h4 class="m-3" id="pert">CPM - PERT</h4>
+                    <p>A partir del grafo procedemos a realizar el método de CPM y PERT. Para mayor facilidad y confiabilidad de los resultados se utilizó el software especializado QM For Windows.</p>
+                    <img src="./assets/img/pert.png" alt="">
+
+                    <h4 class="m-3" id="gant">Diagrama de Gantt </h4>
+                    <p>Un diagrama de Gantt es una herramienta útil para planificar el sistema, al proporcionar una vista general de los objetivos que se han planteado y el período de tiempo en meses de cada una de las actividades. </p>
+                    <p>El eje X muestra el código del objetivo, mientras el eje Y indica el tiempo en meses, cada uno de los objetivos es representado por una barra en la coordenada de tiempo que corresponde según a lo planteado en la calendarización del árbol de objetivos respetando la dependencia de los que requieren, como lo son los objetivos de primer nivel. </p>
+                    <img src="./assets/img/diagrama_gantt.png" alt="">
+                    
+                    <h4 class="m-3" id="memoria">Memoria de cálculo</h4>
+                    <h4 class="m-3" id="calculo_porcentaje">Cálculo de porcentaje de los objetivos</h4>
+                    <img src="./assets/img/memoriaCalculo1.png" alt="">
+                    <img src="./assets/img/memoriaCalculo2.png" alt="">
+                    <img src="./assets/img/memoriaCalculo3.png" alt="">
+                    <h4 class="m-3" id="calculo_alternativas">Cálculo de costo alternativas</h4>
+                    <img class="img-fluid" src="./assets/img/costoAlternativas1.png" alt="">
+                    <img class="img-fluid" src="./assets/img/costoAlternativas2.png" alt="">
+                    <img class="img-fluid" src="./assets/img/costoAlternativas3.png" alt="">
+                    <img class="img-fluid" src="./assets/img/costoAlternativas4.png" alt="">
+                    <img class="img-fluid" src="./assets/img/costoAlternativas5.png" alt="">
+                    <img class="img-fluid" src="./assets/img/costoAlternativas6.png" alt="">
+                </div>
+            </section>
             <!-- Conclusion-->
             <section class="resume-section" id="Conclusion">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Conclusion & Certifications</h2>
-                    <ul class="fa-ul mb-0">
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            Google Analytics Certified Developer
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            Mobile Web Specialist - Google Certification
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            1
-                            <sup>st</sup>
-                            Place - University of Colorado Boulder - Emerging Tech Competition 2009
-                        </li>
-                    </ul>
+                    <h2 class="mb-5">Conclusiones</h2>
+                    <p>Se concluye que, a lo largo del presente proyecto se han logrado cumplir con cada uno de los objetivos planteados para la creación de un sistema de gestión organizacional del Taller de Costuras Nieves, el cual beneficiará a toda la empresa en cuanto a la consecución de los objetivos y metas que se plantee para que funcione de manera eficiente.</p>
+                    <p>Se ha podido analizar las causas del problema principal subdivido en subproblemas con sus efectos, planteado a través del árbol de problemas el cual dio base para proceder a la definición de los objetivos y alternativas planteadas para el sistema óptimo, el cual queda conformado por el conjunto de objetivos y alternativas: SO = {O2.A2, O3.A1, O4.A1, O5.A1, O6.A1, O7.A1, O8.A1, O9.A1, O10.A1, O11.A1, O12.A2, O13.A1, O14.A1, O15.A1} con un costo de implementación de C$ 220, ,534.30 para una vida útil de 20 semanas o 5 meses. </p>
+                    <p>Alternativamente a este plan queda el segundo sistema óptimo conformado de la siguiente manera SO2 = {O2.A2, O3.A1, O4.A2, O5.A2, O6.A1, O7.A1, O8.A1, O9.A1, O10.A1, O11.A1, O12.A2, O13.A1, O14.A1, O15.A1} con un costo de implementación de C$264,605.40 para una vida útil de 20 semanas o 5 meses.</p>
                 </div>
             </section>
         </div>
